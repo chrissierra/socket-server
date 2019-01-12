@@ -9,10 +9,13 @@ const mysql = MySQL.instance;
 // Parser
 server.app.use( bodyParser.urlencoded({extended:true}) );
 server.app.use(bodyParser.json());
+
+server.app.use(cors({origin: true , credentials:true}));
+
 server.app.use('/', router)
 
 // cors
-server.app.use(cors({origin: 'https://sistererpprincipal.firebaseapp.com' , credentials:true}));
+
 
 server.start( () => {
 	console.log("Funcionando en " + server.port)
