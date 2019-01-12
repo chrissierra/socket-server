@@ -12,7 +12,7 @@ server.app.use(bodyParser.json());
 server.app.use('/', router)
 
 // cors
-server.app.use(cors({origin: 'http://localhost:4200' , credentials:true}));
+server.app.use(cors({origin: true , credentials:true}));
 
 server.start( () => {
 	console.log("Funcionando en " + server.port)
