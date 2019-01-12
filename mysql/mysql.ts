@@ -15,8 +15,7 @@ export default class MySQL{
 		  }
 			*/
 		this.cnn =  mysql.createConnection({
-											  host     : 'sister.cl', 
-											  connectTimeout:50000,
+											  host     : 'localhost', 
 											  user     : 'chris',
 											  password : 'jazzmaster',
 											  database : 'recursos_humanos',
